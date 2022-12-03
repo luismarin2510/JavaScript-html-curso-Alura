@@ -18,16 +18,25 @@ JavaScript
     var angie = 23;
 
     var promedio = ((ana+sofia+angie)/3);
-    
+
 // /////////////////////  salto de linea ///////////////////////////
     function saltarlinea (){
         document.write("<br>");
     }
 ////////////////////////////////////////////////////////////////////
+    function imprimir (mensaje){
+        document.write(mensaje)
+    }
+////////////////////////////////////////////////////////////////////
+ function promedios (a,b,c){
+
+    document.write(Math.round((a+b+c)/3))
+ }
+
 
     saltarlinea();
 
-    document.write("ana nacio en "+ (date-ana)+ " "+ "sofia nacio en "+ (date-sofia)+
+    imprimir("ana nacio en "+ (date-ana)+ " "+ "sofia nacio en "+ (date-sofia)+
     " "+ "angie nacio en "+ (date-angie));
     saltarlinea();
 
@@ -37,9 +46,9 @@ JavaScript
     saltarlinea();
 
     
-    document.write("promedio de tres valores 15 25 35")
+    document.write("promedio de las edades de ana sofia angie ")
     saltarlinea();
-    document.write((15+25+35)/3)
+    promedios(ana,sofia,angie);
     saltarlinea();
     document.write("año de nacimiento de pedro")
     saltarlinea();
