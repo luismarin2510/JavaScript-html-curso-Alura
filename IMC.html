@@ -4,10 +4,6 @@
  <script>
 
 
-    var masa = 64;
-    var altura= 1.74 ;
-    var imc = masa/(altura**2);
-
     function saltolinea(){
         document.write("<br>")
     }
@@ -17,11 +13,19 @@
         saltolinea();
     }
 
-   
+    function calcularimc(masa,altura){
 
-    saltolinea();
-    imprimir("su masa corporal es "+ masa+" kilos")
-    imprimir("su altura es "+altura+" Metros")
-    imprimir("Su indice de masa corporal es "+ Math.round(imc));
+        var imc = masa/(altura**2);
+        imprimir("su masa corporal es "+ masa+" kilos")
+        imprimir("su altura es "+altura+" Metros")
+        return(imc);
+    }
+
+    juan =calcularimc(80,1.82)
+    imprimir("Su indice de masa corporal es "+ Math.round(juan));
+
+   
+    
+    
 
  </script>
