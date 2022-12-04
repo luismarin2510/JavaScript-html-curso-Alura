@@ -3,7 +3,6 @@
 <h1>Calculo del IMC </h1>
  <script>
 
-
     function saltolinea(){
         document.write("<br>")
     }
@@ -13,16 +12,19 @@
         saltolinea();
     }
 
-    function calcularimc(masa,altura){
+    function calcularimc(masa,altura,nombre){
 
         var imc = masa/(altura**2);
-        imprimir("su masa corporal es "+ masa+" kilos")
-        imprimir("su altura es "+altura+" Metros")
-        return(imc);
+        imprimir(nombre + " tus datos son ");
+        imprimir("masa corporal es "+ masa+" kilos");
+        imprimir("altura es "+altura+" Metros");
+        imprimir("Su indice de masa corporal es "+ Math.round(imc));
     }
 
-    juan =calcularimc(80,1.82)
-    imprimir("Su indice de masa corporal es "+ Math.round(juan));
+    juan =calcularimc(80,1.82,"Juan");
+    saltolinea();
+    pedro =calcularimc(80,1.82,"Pedro");
+   
 
    
     
