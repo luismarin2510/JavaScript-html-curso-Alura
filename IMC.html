@@ -19,6 +19,7 @@
         imprimir("masa corporal es "+ masa+" kilos");
         imprimir("altura es "+altura+" Metros");
         imprimir("Su indice de masa corporal es "+ Math.round(imc));
+        return imc ;
     }
 
     var namen = prompt("cual es tu nombre ");
@@ -27,7 +28,13 @@
 
     usuario =calcularimc(kilos,alto,namen);
    
-   
+   if (usuario < 18.5){
+    imprimir("Tienes una insuficiencia ponderal ")
+   }
+   if(usuario >= 18.5 && usuario <24.9 ){
+
+    imprimir("Tienes un intervalo normal ")
+   }
 
    
     
