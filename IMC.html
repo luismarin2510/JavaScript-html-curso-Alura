@@ -29,12 +29,24 @@
     usuario =calcularimc(kilos,alto,namen);
    
    if (usuario < 18.5){
-    imprimir("Tienes una insuficiencia ponderal ")
+    imprimir("Tienes una insuficiencia ponderal ");
    }
-   if(usuario >= 18.5 && usuario <24.9 ){
+   if(usuario >= 18.5 && usuario <=24.9 ){
 
-    imprimir("Tienes un intervalo normal ")
+    imprimir("Tienes un intervalo normal ");
    }
+   if(usuario >= 30 && usuario <=34.9){
+    imprimir("Tienes Obesidad de Clase 1");
+   }
+   if(usuario >= 35 && usuario <=39.9){
+    imprimir("Tienes Obesidad de Clase 2");
+   }
+   if(usuario >= 40){
+    imprimir("Tienes Obesidad de Clase 3");
+   }
+   
+   
+
 
    
     
